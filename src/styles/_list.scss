@@ -1,3 +1,5 @@
+// css for list component
+
 .list{
     @include box;
 
@@ -17,16 +19,6 @@
     align-self: flex-end;
     text-decoration: none;
     @include buttonStyle;
-
-    
-}
-
-.green{
-    color: $green;
-}
-
-.red{
-    color: red;
 }
 
 .list-btns{

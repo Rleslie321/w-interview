@@ -1,3 +1,5 @@
+// main file for css, handles imports, and properties for the whole application
+
 *{
     padding: 0;
     margin: 0;
@@ -22,6 +24,26 @@ main{
 @import './list';
 @import './issue';
 
+// css for classes that can be applied anywhere
+.bold{
+    font-weight: bold;
+}
+
+.small{
+    font-size: 0.75rem;
+    font-style: italic;
+    margin: 0 !important;
+}
+
+.green{
+    color: $green;
+}
+
+.red{
+    color: red;
+}
+
+// media query to provide mobile first design and update when page gets bigger
 @media (min-width: 700px){
     .list-header, .issue-header{
         flex-direction: row;

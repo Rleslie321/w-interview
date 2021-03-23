@@ -1,4 +1,4 @@
-// 
+// component to make a header that appears on all pages
 function Header() {
     return(
         <header>

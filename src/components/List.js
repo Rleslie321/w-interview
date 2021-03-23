@@ -1,3 +1,5 @@
+// component to list all the issues
+
 import { Link } from "react-router-dom";
 import {useState} from 'react';
 
@@ -6,7 +8,7 @@ function List (props){
     // variables to create pagination
     let len = props.content.length;
     const [start, setStart] = useState(0);
-    const delim = 10;
+    const delim = 10;   //defines how many should be shown
     const [end, setEnd] = useState(len > delim ? delim : len);
     const pagination = len / delim;
     // create array of all the numbered buttons
@@ -27,6 +29,7 @@ function List (props){
     }
     return(
         <>
+            {/* display issues within a sliding window determined by start and end */}
             {props.content.slice(start, end>len ? len : end).map(item =>{
                 return <div className="list">
                             <div className="list-header">
@@ -37,6 +40,8 @@ function List (props){
                             <Link className="link" key={item.id} to={`/issue/${item.number}`}>More Info</Link>
                         </div>
             })}
+
+            {/* buttons to control the currently displayed issues updating start and end */}
             <div className="list-btns">
                 <button
                     disabled={start-delim<0}

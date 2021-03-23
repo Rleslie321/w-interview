@@ -1,11 +1,14 @@
+// component to display a particular issue from the num parameter passed in the url
+
 import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 
 
 function Issue(){
     const [issue, setIssue] = useState(null);
-    let {num} = useParams(); 
+    let {num} = useParams(); //grab the num from the url
 
+    // update title, and fetch specific issue, acts like componentdidmount
     useEffect(()=>{
         document.title = `Issue #${num}`;
         fetch(`https://api.github.com/repos/walmartlabs/thorax/issues/${num}`)
@@ -19,6 +22,7 @@ function Issue(){
     
     return(
         <>  
+        {/* returns information once issue has been retrieved from github */}
         {issue === null ? "" : <div className="issue">
                                     <div className="issue-header">
                                         <h1>Issue: {issue.number}</h1> 

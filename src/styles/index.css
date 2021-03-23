@@ -99,14 +99,6 @@ header img {
   cursor: pointer;
 }
 
-.green {
-  color: green;
-}
-
-.red {
-  color: red;
-}
-
 .list-btns button {
   border: 1px solid #003896;
   background-color: #0072CE;
@@ -173,6 +165,14 @@ header img {
   font-size: 0.75rem;
   font-style: italic;
   margin: 0 !important;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
 }
 
 @media (min-width: 700px) {

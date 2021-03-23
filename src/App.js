@@ -16,6 +16,7 @@ class App extends Component {
     }
   }
 
+  // when component mounts fetch the issues from the repo and update state
   componentDidMount(){
     fetch('https://api.github.com/repos/walmartlabs/thorax/issues')
       .then(response => response.json())

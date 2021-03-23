@@ -1,24 +1,16 @@
+// css for issue component
+
 .issue{
     @include box;
-    // padding-bottom: 0;
 
     p{
         margin: 0.75rem 0;
     }
 }
+
 .issue-header{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-.small{
-    font-size: 0.75rem;
-    font-style: italic;
-    margin: 0 !important;
 }
