@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-width: 100%;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@import './var';
+@import './header';
+@import './list';
+@import './issue';
+
+@media (min-width: 700px){
+    .list-header, .issue-header{
+        flex-direction: row;
+    }
+}

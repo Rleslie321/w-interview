@@ -1,0 +1,42 @@
+.list{
+    @include box;
+
+    p{
+        margin: 1rem 0;
+    }
+}
+.list-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.link{
+    align-self: flex-end;
+    text-decoration: none;
+    @include buttonStyle;
+
+    
+}
+
+.green{
+    color: $green;
+}
+
+.red{
+    color: red;
+}
+
+.list-btns{
+    button{
+        @include buttonStyle;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0.5rem 2rem 0.5rem;
+        &:disabled{
+            background-color: $disabledBtn;
+        }
+    }
+    
+}

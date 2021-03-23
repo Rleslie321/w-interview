@@ -1,0 +1,3 @@
+using logo from https://commons.wikimedia.org/wiki/File:Walmart_logo.svg
+
+using spark from https://commons.wikimedia.org/wiki/File:Walmart_Spark.svg
